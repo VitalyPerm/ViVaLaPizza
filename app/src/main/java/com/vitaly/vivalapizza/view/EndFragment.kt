@@ -26,7 +26,7 @@ class EndFragment : Fragment() {
 
     private fun initialization() {
         requireActivity().window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-        binding.btnBackToMenu.setOnClickListener {
+        binding.tvBackToMenu.setOnClickListener {
             APP_ACTIVITY.navController.navigate(R.id.action_endFragment_to_mainFragment)
         }
     }
